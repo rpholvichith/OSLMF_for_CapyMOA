@@ -34,4 +34,4 @@ or run the Jupyter Notebook.
 
 # Credits
 
-This work is inspired by the paper of Wu D., Zhuo S., Wang Y., Chen Z., & He Y. (2023). [https://ojs.aaai.org/index.php/AAAI/article/view/25596](https://ojs.aaai.org/index.php/AAAI/article/view/25596)
+This work is inspired by the paper of Wu D., Zhuo S., Wang Y., Chen Z., & He Y. (2023). Online Semi-supervised Learning with Mix-Typed Streaming Features. *Proceedings of the AAAI Conference on Artificial Intelligence*, 37(4), 4720-4728. [https://doi.org/10.1609/aaai.v37i4.25596](https://doi.org/10.1609/aaai.v37i4.25596)
