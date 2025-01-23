@@ -379,7 +379,7 @@ def SSC_DensityPeaks_SVC(train, label_train, t, nneigh, clf): # , test, label_te
     length_data = len(data)
     length_struct = len(struct)
     diff_array = np.array([i for i in range(0,data.shape[0],1)])
-    t_U = np.setdiff1d(diff_array, t-1)
+    t_U = np.setdiff1d(diff_array, t-1).astype(int)
     label_U.append(label_train[t_U])
     label_U = np.array(label_U)
     label_U = label_U.reshape(label_U.shape[1])#, label_U.shape[0])
@@ -730,10 +730,10 @@ def SSC_DensityPeaks_SVC_ensemble(train_1, label_train_1, train_2, label_train_2
             #predict_label_train_1 = np.argmax(predict_label_train_1)
             predict_label_train_1 = predict_label_train_1[0, 1]
         except IndexError:
-            print("IndexErrored")
+            #print("IndexErrored")
             predict_label_train_1 = np.random.randint(0, 2, 1)
         except :
-            print("Other error")
+            #print("Other error")
             predict_label_train_1 = np.random.randint(0, 2, 1)
 
         try:
